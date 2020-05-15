@@ -100,7 +100,7 @@ nav {
   display: flex;
   justify-content: space-between;
   justify-content: center;
-  width: 100%;
+  width: 800px;
   padding: 4%;
   font-size: 1.6rem;
 }
@@ -116,6 +116,7 @@ nav a:hover {
   font-weight: bold;
 }
 body {
+  width: 800px;
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
 }
@@ -123,8 +124,10 @@ body {
   width: 800px;
 }
 .big-container .title-container {
-  display: flex;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
 }
 .big-container .title-container .home-image {
   width: 100%;
@@ -156,5 +159,16 @@ body {
 }
 .big-container .artists-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+.big-container .artists-container .artist {
+  justify-content: space-around;
+  width: 40%;
+}
+.big-container .artists-container .artist img {
+  max-width: 300px;
+  max-height: 300px;
+}
+.big-container .artists-container .artist .bio {
+  width: 70%;
 }
