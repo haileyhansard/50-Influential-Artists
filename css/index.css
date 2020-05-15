@@ -82,68 +82,65 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
 * {
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%;
+header {
+  width: 100%;
 }
-html,
-body {
-  font-family: 'Raleway', sans-serif;
-}
-nav {
+header nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   justify-content: center;
-  width: 800px;
-  padding: 4%;
+  padding: 4% 0;
   font-size: 1.6rem;
 }
-nav a {
+header nav a {
   text-decoration: none;
   color: #212529;
   font-family: 'Raleway', sans-serif;
   justify-content: space-between;
   padding: 0 1.5%;
 }
-nav a:hover {
+header nav a:hover {
   color: black;
   font-weight: bold;
 }
 body {
-  width: 800px;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.6rem;
+  font-size: 62.5%;
 }
-.big-container {
-  width: 800px;
+body .big-container {
+  margin: 0;
+  width: 100%;
 }
-.big-container .title-container {
+body .big-container .title-container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 2%;
+  padding: 2% 8%;
 }
-.big-container .title-container .home-image {
+body .big-container .title-container .home-image {
   width: 100%;
   height: auto;
   position: relative;
   text-align: center;
   color: white;
 }
-.big-container .title-container .home-image h1 {
+body .big-container .title-container .home-image h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4rem;
 }
-.big-container .title-container .home-image button {
+body .big-container .title-container .home-image button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -151,24 +148,33 @@ body {
   -ms-transform: translate(-50%, -50%);
   background-color: white;
   color: #212529;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
-.big-container .artists-container {
+body .big-container .artists-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  justify-items: center;
 }
-.big-container .artists-container .artist {
-  justify-content: space-around;
-  width: 40%;
+body .big-container .artists-container .artist {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  padding-top: 4%;
 }
-.big-container .artists-container .artist img {
+body .big-container .artists-container .artist img {
   max-width: 300px;
   max-height: 300px;
 }
-.big-container .artists-container .artist .bio {
-  width: 70%;
+body .big-container .artists-container .artist img div a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-align: center;
+}
+body .big-container .artists-container .artist .bio {
+  width: 90%;
+  text-align: center;
 }
