@@ -1,4 +1,4 @@
-const artists = [
+const artists = [ //artists is the name of the array, data is below
     {
       "id": 0,
       "name": "Amedeo Modigliani",
