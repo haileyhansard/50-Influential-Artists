@@ -129,6 +129,30 @@ body {
 .big-container .title-container .home-image {
   width: 100%;
   height: auto;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.big-container .title-container .home-image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+}
+.big-container .title-container .home-image button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: #212529;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 .big-container .artists-container {
   display: flex;
