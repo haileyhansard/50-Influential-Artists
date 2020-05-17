@@ -91,6 +91,8 @@ video {
 }
 header {
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 header nav {
   width: 100%;
@@ -114,56 +116,71 @@ header nav a:hover {
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 62.5%;
+  width: 100%;
+  margin: 0 auto;
 }
 body .big-container {
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
+  background: red;
 }
 body .big-container .title-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  padding: 2% 8%;
+  align-items: center;
+  padding: 0 8% 2%;
+  background: yellow;
+  height: 100vh;
 }
 body .big-container .title-container .home-image {
-  width: 100%;
-  height: auto;
-  position: relative;
+  background-image: url('https://github.com/haileyhansard/50-Influential-Artists/blob/master/assets/home.png?raw=true');
+  background-size: cover;
+  background-position: center;
+  width: 85%;
   text-align: center;
   color: white;
+  padding: 0 5% 2%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body .big-container .title-container .home-image h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 4rem;
+  font-size: 3rem;
 }
 body .big-container .title-container .home-image button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   background-color: white;
   color: #212529;
   font-size: 1.6rem;
   padding: 12px 24px;
+  margin: 1%;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
+body .big-container .title-container hr {
+  width: 90%;
+  text-align: center;
 }
 body .big-container .artists-container {
   display: flex;
   justify-content: center;
   justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+  background: lightblue;
 }
 body .big-container .artists-container .artist {
   display: flex;
   flex-direction: column;
   width: 48%;
   padding-top: 4%;
+  background: mistyrose;
 }
 body .big-container .artists-container .artist img {
   max-width: 300px;
@@ -175,6 +192,5 @@ body .big-container .artists-container .artist img div a {
   text-align: center;
 }
 body .big-container .artists-container .artist .bio {
-  width: 90%;
   text-align: center;
 }
