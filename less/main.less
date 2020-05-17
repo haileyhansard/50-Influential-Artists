@@ -7,20 +7,25 @@ body{
 
     .big-container{
         margin: 0 auto;
-        width:100%;
-        background:red;
+        max-width:1024px;
+        // background:red;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
     
 
         .title-container{
             width:100%;
             display: flex;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding:0 8% 2%;
-            background:yellow;
-            height: 100vh;
+            // background:yellow;
+            height: 60vh;
+            overflow:hidden;
 
             .home-image{
                 background-image: url('https://github.com/haileyhansard/50-Influential-Artists/blob/master/assets/home.png?raw=true');
@@ -29,7 +34,7 @@ body{
                 width: 85%;
                 text-align: center;
                 color: white;
-                padding:0 5% 2%;
+                padding:0 auto;
                 height:90vh;
                 display:flex;
                 flex-direction:column;
@@ -43,8 +48,8 @@ body{
                 button{
                     background-color:white;
                     color: @font-color;
-                    font-size: 1.6rem;
-                    padding: 12px 24px;
+                    font-size: 1.2rem;
+                    padding: 1% 3%;
                     margin:1%;
                     border: none;
                     cursor: pointer;
@@ -53,8 +58,10 @@ body{
             }
         
             hr{
-                width:90%;
+                width:95%;
                 text-align:center;
+                margin-top:2%;
+                color:lightgray;
             }
         
     }    
@@ -62,32 +69,43 @@ body{
     .artists-container{
         display:flex;
         justify-content: center;
-        justify-items: center;
-        align-items: center;  //?
+        align-content: space-between;
+        align-items: flex-start; 
         margin: 0 auto;
         width:70%;
-        background:lightblue;
+        // background:lightblue;
        
 
         .artist{
             display:flex;
             flex-direction: column;
-            width:48%;
-            padding-top:4%;
-            background: mistyrose;
+            // align-items: center;
+            justify-content: space-between;
+            width:80%;
+            // background: mistyrose;
+            padding-bottom: 4%;
 
-            img{
-                max-width:300px;
+           img{
+                max-width:90%;
                 max-height:300px;
-            
-                div a{
-                    text-decoration: none;
-                    font-size: 1.6rem;
-                    text-align: center;
-                }
+                min-height: 250px;
+                border-radius: 10px;
+                align-self: center;
             }
+            
+            a{
+                text-decoration: none;
+                color: @font-color;
+                font-size: 1.4rem;
+                padding:4% 0;
+                text-align: center;
+                }
+            
             .bio{
                 text-align: center;
+                width: 95%;
+                font-size: 1.05rem;
+                color:@font-color;
             }
         
         }
