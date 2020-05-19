@@ -214,8 +214,22 @@ console.log(artists[2].bio);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-artists.name[8] = "Vincent Van Gogh";  ///stuck here.
-console.log(artists[8].name);
+let fixTypo = (artists[8].name.replace('Vincent Van Dough', 'Vincent Van Gogh'));
+console.log(fixTypo);
+
+// artists.name[8] = "Vincent Van Gogh";  ///stuck here.
+// console.log(artists[8].name);
+
+// {
+//   "id": 8,
+//   "name": "Vincent van Dough",
+//   "years": "1853 – 1890",
+//   "genre": "Post-Impressionism",
+//   "nationality": "Dutch",
+//   "bio": "Vincent Willem van Gogh (Dutch: [ˈvɪnsɛnt ˈʋɪləm vɑŋ ˈɣɔx] (listen); 30 March 1853 – 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. However, he was not commercially successful, and his suicide at 37 followed years of mental illness and poverty.",
+//   "wikipedia": "http://en.wikipedia.org/wiki/Vincent_van_Gogh",
+//   "paintings": 877
+// },
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -226,7 +240,7 @@ console.log(artists[8].name);
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
+function getArtistByIndex(id, number) {
     /* code here */
   }
   
