@@ -214,8 +214,10 @@ console.log(artists[2].bio);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-let fixTypo = (artists[8].name.replace('Vincent Van Dough', 'Vincent Van Gogh'));
-console.log(fixTypo);
+artists[8].name = 'Vincent Van Gogh';
+console.log(artists[8]);
+
+//dont need to use replace
 
 // artists.name[8] = "Vincent Van Gogh";  ///stuck here.
 // console.log(artists[8].name);
@@ -241,10 +243,10 @@ console.log(fixTypo);
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 
-function getArtistByIndex(id, number) {
-  return (`The artist at index ${id} is ${name}`);
+function getArtistByIndex(id, array) {
+  return (`The artist at index ${id} is ${array[id].name}`);
   }
-  console.log(artists[1], artists[2]);
+  console.log(getArtistByIndex(8,artists));
   /**
 
 
