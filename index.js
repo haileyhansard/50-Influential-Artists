@@ -240,10 +240,11 @@ console.log(fixTypo);
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
+
 function getArtistByIndex(id, number) {
-    /* code here */
+  return (`The artist at index ${id} is ${name}`);
   }
-  
+  console.log(artists[1], artists[2]);
   /**
 
 
