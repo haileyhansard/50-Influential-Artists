@@ -253,17 +253,27 @@ console.log(removeArtist(artists,12));
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
+ function lotsOfArt(prolificPersons){
+for (let i = 0; i < artists.length; i++) {
+  if (artists[i].paintings > 100){
+   console.log(artists[i].name)  
+  }
+}
+};
+console.log(lotsOfArt(artists));
 
-// function lotsOfArt(artists){ 
-//   for (let i = 0; i < artists.length; i++){
-//     let prolific = []
-//   }
-//   //do I need a for loop here to loop through all data?
-//  if artists[0].paintings > 100{
-//  return prolific ; 
-//  }
-//  };
-//  console.log(lotsofArt(artists));
+// This works below, but it is not a function:
+// let prolificArtists = artists.filter(artist => {
+//   return artist.paintings >= 100;
+// }).map(artist => {
+//   return artist.name;
+// });
+// console.log(prolificArtists);
+
+
+
+
+
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
