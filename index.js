@@ -217,21 +217,7 @@ console.log(artists[2].bio);
 artists[8].name = 'Vincent Van Gogh';
 console.log(artists[8]);
 
-//dont need to use replace
 
-// artists.name[8] = "Vincent Van Gogh";  ///stuck here.
-// console.log(artists[8].name);
-
-// {
-//   "id": 8,
-//   "name": "Vincent van Dough",
-//   "years": "1853 – 1890",
-//   "genre": "Post-Impressionism",
-//   "nationality": "Dutch",
-//   "bio": "Vincent Willem van Gogh (Dutch: [ˈvɪnsɛnt ˈʋɪləm vɑŋ ˈɣɔx] (listen); 30 March 1853 – 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. However, he was not commercially successful, and his suicide at 37 followed years of mental illness and poverty.",
-//   "wikipedia": "http://en.wikipedia.org/wiki/Vincent_van_Gogh",
-//   "paintings": 877
-// },
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -244,9 +230,9 @@ console.log(artists[8]);
 */
 
 function getArtistByIndex(id, array) {
-  return (`The artist at index ${id} is ${array[id].name}`);
+  return (`The artist at index ${id} is ${array[id].name}.`);
   }
-  console.log(getArtistByIndex(8,artists));
+  console.log(getArtistByIndex(10,artists));
   /**
 
 
@@ -258,20 +244,26 @@ function getArtistByIndex(id, array) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
-  
-  /**
+function removeArtist(array, index) {    
+  let goodbye = artists.splice(index,1);  
+  return goodbye;
+  };
 
+console.log(removeArtist(artists,12));
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
 
-    /* Code here */
-
-  }
+// function lotsOfArt(artists){ 
+//   for (let i = 0; i < artists.length; i++){
+//     let prolific = []
+//   }
+//   //do I need a for loop here to loop through all data?
+//  if artists[0].paintings > 100{
+//  return prolific ; 
+//  }
+//  };
+//  console.log(lotsofArt(artists));
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
