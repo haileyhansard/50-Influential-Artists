@@ -254,11 +254,12 @@ console.log(removeArtist(artists,12));
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
  function lotsOfArt(prolificPersons){
-for (let i = 0; i < artists.length; i++) {
+let prolific = [];
+  for (let i = 0; i < artists.length; i++) {
   if (artists[i].paintings > 100){
-   console.log(artists[i].name)  
+   prolific.push(artists[i].name)  
   }
-}
+} return prolific;
 };
 console.log(lotsOfArt(artists));
 
@@ -285,11 +286,19 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+function addArtist(){
+artists.push({
+id: "21",
+name: "Hailey Hansard", 
+years: "1987 - current day",
+genre: "Web Design", 
+nationality: "American",
+bio: "Lorem ipsum dolor sit amet, atomorum intellegebat pri ei. Sed ad tamquam reprimique, ex phaedrum periculis vel."})
+return artists
+};
 
-    /* Code here */
+console.log(addArtist());
 
-  }
 
 
 
