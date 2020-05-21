@@ -1,0 +1,31 @@
+header{
+    width:100%;
+    max-width:800px;
+    margin: 0 auto;
+
+    nav{
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        justify-content: center;
+        padding: 4% 0;
+        font-size: 1.6rem;
+    
+        a{
+            text-decoration: none;
+            color: @font-color;
+            font-family: 'Raleway', sans-serif;
+            justify-content: space-between;
+            padding: 0 1.5%;
+            border-right: 2px solid @font-color;
+
+        &:hover{
+            color: darken(@font-color, 40%);
+          }
+
+          &:last-child{
+              border-right: none;
+          }
+        }
+    }
+}

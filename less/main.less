@@ -1,0 +1,137 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:62.5%;
+    width:100%;
+    margin:0 auto;
+
+
+    .big-container{
+        margin: 0 auto;
+        max-width:1024px;
+        // background:red;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+
+        @media @phone{
+            flex-direction:column;
+            width:100%;
+            justify-content: center;
+        }
+    
+
+        .title-container{
+            width:100%;
+            display: flex;
+            // flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:0 8% 2%;
+            // background:yellow;
+            height: 60vh;
+            overflow:hidden;
+
+            .home-image{
+                background-image: url('https://github.com/haileyhansard/50-Influential-Artists/blob/master/assets/home.png?raw=true');
+                background-size: cover;
+                background-position: center;
+                width: 85%;
+                text-align: center;
+                color: white;
+                padding:0 auto;
+                height:90vh;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items:center;
+
+                @media @phone{
+                    height:40vh;
+                }
+            
+                h1{
+                    font-size: 3rem;
+                }
+
+                button{
+                .btn-class(@accent-color, @font-color, 1.2rem, 1% 3%, 1%, none, pointer, 5px)
+                }
+            }
+        
+            hr{
+                width:95%;
+                text-align:center;
+                margin-top:2%;
+                color:lightgray;
+            }
+        
+    }    
+
+    .artists-container{
+        display:flex;
+        justify-content: center;
+        align-content: space-between;
+        align-items: flex-start; 
+        margin: 0 auto;
+        width:70%;
+        // background:lightblue;
+
+        @media @phone{
+            flex-direction:column;
+            width:70%;
+            justify-content: center;
+        }
+       
+
+        .artist{
+            display:flex;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: space-between;
+            width:48%;
+            // background: mistyrose;
+            padding-bottom: 4%;
+            padding-right:0;
+            padding-left:0;
+            padding-top: 0;
+            margin:0;
+
+            @media @phone{
+                width:100%;
+            }
+
+           img{
+                max-width:90%;
+                max-height:300px;
+                min-height: 250px;
+                border-radius: 10px;
+                padding:0;
+                // align-self: center;
+                // text-align: center;
+            }
+            
+            a{
+                text-decoration: none;
+                color: @font-color;
+                font-size: 1.4rem;
+                padding:4% 0;
+                text-align: center;
+                }
+            
+            .bio{
+                text-align: center;
+                width: 85%;
+                font-size: 1.05rem;
+                color:@font-color;
+
+                @media @phone{
+                    width:100%;
+                }
+            }
+        
+        }
+    }
+}
+} 
